@@ -1,13 +1,26 @@
 version: '3'
 
 services:
+  app:
+    image: rabbitmqgettingstarted:latest 
+    networks:
+        - app-network
+    volumes:
+      - ./:/usr/src/app
+
   rabbitmq:
     image: 'rabbitmq:3-management'
     ports:
       - '5672:5672'
       - '15672:15672'
+    networks:
+        - app-network
     # volumes:
     #   - 'rabbitmq_data:/bitnami'
 # volumes:
 #   rabbitmq_data:
 #     driver: local
+
+networks: 
+    app-network:
+        name: app-network

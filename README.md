@@ -7,9 +7,8 @@
 ## Before You Begin
 
 Here are few tools you need
-1. Docker :  RabbitMQ server will run in a container to ease the setup
+1. Docker :  RabbitMQ server will run in a container to ease the setup and app will run in a different container 
 2. Python 
-3. [Pipenv](https://pipenv.pypa.io/en/latest/) is used to set up a working environment
 
 ## Run RabbitMQ server
 
@@ -32,17 +31,16 @@ To access the web UI, go to http://localhost:15672. The username and password ar
 
 ## Run emitter and consumer
 
-1. `emitter.py` emit messages to Rabbit MQ. Run the code `pipenv run python3 app/emitter.py`
-2. `consumer.py` code consume emitted messages. Run the code `pipenv run python3 app/consumer.py`
+1. `emitter.py` emit messages to Rabbit MQ. Run the code `python3 app/tutorial_1-hello-world/emitter.py`
+2. `consumer.py` code consume emitted messages. Run the code `python3 app/tutorial_1-hello-world/consumer.py`
 
 Make sure RabbitMQ server is running
 
 ## Links and info
 
 1. [Experimenting with RabbitMQ on our workstation](https://www.rabbitmq.com/download.html)
-2. [Pipenv](https://pipenv.pypa.io/en/latest/)
-3. [Docker](https://docs.docker.com/desktop/)
-4. [Docker-Compose](https://docs.docker.com/compose/gettingstarted/)
+2. [Docker](https://docs.docker.com/desktop/)
+3. [Docker-Compose](https://docs.docker.com/compose/gettingstarted/)
 
 
 
