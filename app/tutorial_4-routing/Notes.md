@@ -14,6 +14,8 @@ Direct exchange: The routing algorithm behind a direct exchange is simple - a me
 
 NOTE: Bindings can take an extra *routing_key* parameter. Don't confuse these with publish *routing_key* parameter
 
+![img](routing.png)
+
 #### Publish
 ------------
 
