@@ -13,6 +13,8 @@
 > 2. An exchange receives messages from producers and the other side it pushes them to queues.
 > 3. Exchange type guides exchanges what exchange should do with the messages. Depending on the exchange type: it can append message to a particular queue, or it can append message to many queues or discard the messages at all
 
+![img](publish_subscribe.png)
+
 #### Exchange Type
 ------------------
 
